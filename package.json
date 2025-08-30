@@ -1,0 +1,28 @@
+{
+  "name": "ens",
+  "version": "1.0.0",
+  "description": "[![ENS](https://img.shields.io/badge/ENS-Ethereum_Name_Service-blue)](https://ens.domains) [![Ethereum](https://img.shields.io/badge/Ethereum-Blockchain-black)](https://ethereum.org) [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fork:start": "bash hardhat/scripts/00-start-node.sh",
+    "fork:seed": "npx hardhat run --network localhost hardhat/scripts/01-seed-ens.js --config hardhat/hardhat.config.js",
+    "fork:reset": "rm -rf hardhat/cache hardhat/artifacts && echo reset"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "dotenv": "^17.2.1",
+    "hardhat": "^2.26.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@ensdomains/ens-contracts": "^1.5.2",
+    "@ensdomains/ensjs": "^4.0.2",
+    "ethers": "^5.7.2"
+  }
+}

@@ -1,0 +1,11 @@
+node_modules/
+.hardhat/
+hardhat/cache/
+hardhat/artifacts/
+.env
+.env.*
+.DS_Store
+**/*.log
+**/.env
+**/.DS_Store
+

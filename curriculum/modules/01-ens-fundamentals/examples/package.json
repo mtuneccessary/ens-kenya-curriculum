@@ -1,0 +1,30 @@
+{
+  "name": "ens-fundamentals-examples",
+  "version": "1.0.0",
+  "description": "Code examples for ENS Smart Contract Fundamentals module",
+  "main": "basic-ens-interaction.js",
+  "scripts": {
+    "start": "node -r dotenv/config basic-ens-interaction.js",
+    "advanced": "node -r dotenv/config advanced-ens-operations.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ens",
+    "ethereum",
+    "name-service",
+    "smart-contracts",
+    "blockchain"
+  ],
+  "author": "ENS Developer Education Series",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ensdomains/developer-education-series"
+  }
+}
